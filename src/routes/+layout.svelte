@@ -2,10 +2,9 @@
     <div class="nav-container">
     <a href="/" class="nav-logo" title="Back to Homepage">Елгин Богдан</a>
     <div class="nav-links">
-    <a href="/about" class="link">Мне 17 лет, проживаю в городе Юрга.</a>
-    <a href="/blog" class="link">что-то</a>
-    <a href="/projects" class="link">Пока не придумал</a>
-    <a href="/contacts" class="link">Номер телефона: +79001023536</a>
+        {#each nav as link}
+        <a href={link.href} class="link">{link.title}</a>
+        {/each}
     </div>
   </div>
 </nav>
@@ -21,3 +20,27 @@
         margin: 50px auto;
     }
 </style>
+<script>
+        const nav = [
+        {
+        title:'Обо мне',
+        href: '/about'
+        },
+        {
+        title: 'Блог',
+        href: '/blog'
+        },
+        {
+        title: 'Портфолио',
+        href: '/project'
+        },
+        {
+        title: 'Контакты',
+        href: '/contact'
+        },
+        {
+        title: 'temp',
+        href: '/temp'
+        }
+    ]
+</script>
