@@ -8,7 +8,8 @@
         {#each routes as page}
         <div class="post">
             <h2>{page.title}</h2>
-            <>{page.body}
+            <p>{page.body}</p>
+            <p class="readmore">
             <a class="link" href={"/blog/posts${page.id}"}>
             Читать далее
             </a>
