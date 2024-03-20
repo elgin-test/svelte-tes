@@ -5,6 +5,7 @@
     <div class="container">
     <h1>Мои статьи</h1>
         <div class="blogposts">
+        <!-- svelte-ignore missing-declaration -->
         {#each routes as page}
         <div class="post">
             <h2>{page.title}</h2>
